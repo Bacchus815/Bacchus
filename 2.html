@@ -3,34 +3,9 @@
 <head>
 <title>Bacchus - CSS</title>
 <meta charset="utf-8">
-<style>
-    body{
-        margin:0;
-    }
-    a{
-        color: hotpink;
-        }
-    .saw{
-        color: aqua;
-    }
-    h1{
-        text-align: center;
-        font-size: 60px;
-        border-bottom:2px gray solid;
-        padding:30px;
-        margin:0px;
-        }
-    ol{
-        border-right:2px solid gray ;
-        margin: 0;
-        width: 100px;
-        padding: 20px;
-    }
-    #grid{
-        display: grid;
-        grid-template-columns: 250px 1fr;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="JS.js"></script>
 </head>
 <body>
     <h1><a href="index.html">Bacchus World</a></h1>
@@ -42,6 +17,9 @@
     </ol>
 <div id="article">
     <h2>CSS 공부</h2>
+    <input type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
 <p><h3>박경진</h3> 
     <br>박카스 첫째언니<br>1994년 3월 7일생<br>첫째언니라는 칭호를 가지고 있지만 실직적으로는 돈 벌어 오는 기계</p>
     <p>

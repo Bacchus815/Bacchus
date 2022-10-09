@@ -3,7 +3,9 @@
 <head>
 <title>Bacchus - html</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
+<script src="JS.js"></script>
 </head>
 <body>
     <h1><a href="index.html">Bacchus World</a></h1>
@@ -17,30 +19,7 @@
     <div id="article">
     <h2>html공부</h2>  
     <input type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value='day';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color = 'powderblue';
-        i = i + 1 
-    }
-    }else{
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value='night';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color = 'hotpink';
-        i = i + 1 
-    }
-    }
+    nightDayHandler(this);
     ">
         <h3><u><a href="https://www.naver.com/" target="_blank" title="naver로 연결">박카스</a></u></h3> 
         <IMG SRC="bacchus.jpg" width="450">
@@ -71,16 +50,7 @@
         </p>   
     </p>
     <input type="button" value="night" onclick="
-    if(this.value === 'night'){
-     document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    this.value='day';
-    }else{
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    this.value='night';
-    }
-    ">
+    nightDayHandler(this);">
     </div>
 </div>
 </body>
